@@ -1,3 +1,20 @@
-for (let index = 0; index < 4; index++) {
-    basic.showString("Marcela")
-}
+basic.forever(function () {
+    while (input.buttonIsPressed(Button.A)) {
+        basic.showArrow(ArrowNames.North)
+        basic.showArrow(ArrowNames.NorthEast)
+        basic.showArrow(ArrowNames.East)
+        basic.showArrow(ArrowNames.SouthEast)
+        basic.showArrow(ArrowNames.South)
+        basic.showArrow(ArrowNames.SouthWest)
+        basic.showArrow(ArrowNames.West)
+    }
+    while (input.buttonIsPressed(Button.B)) {
+        basic.showArrow(ArrowNames.West)
+        basic.showArrow(ArrowNames.SouthWest)
+        basic.showArrow(ArrowNames.South)
+        basic.showArrow(ArrowNames.SouthEast)
+        basic.showArrow(ArrowNames.East)
+        basic.showArrow(ArrowNames.NorthEast)
+        basic.showArrow(ArrowNames.North)
+    }
+})
